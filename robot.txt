@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block system or admin folders (future-proof)
+Disallow: /admin/
+Disallow: /database/
+Disallow: /private/
+
+Sitemap: https://murnice.co.za/sitemap.xml

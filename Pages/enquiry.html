@@ -1,65 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Enquiry - MURN ICE CUBES &amp; BLOCKS FACTORY</title>
-  <meta name="description" content="Place an enquiry for ice cubes or blocks. Dynamic total calculation and validation." />
-  <meta name="keywords" content="enquiry, quote, ice cubes, ice blocks, order" />
-  <link rel="stylesheet" href="../css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enquiry / Order — MURN Ice</title>
+  <meta name="description"
+    content="Request a quote or place an order for ice cubes or blocks. Use the quick calculator to estimate cost." />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <header>
-    <div id="name"><h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1><h2>Enquiry</h2></div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"/>
-    <label for="menu-toggle" class="menu-icon">☰</label>
-    <nav><ul class="nav-links">
-        <li><a href="../index.html">Home</a>
-        </li><li><a href="About us.html" >About</a>
-        </li><li><a href="Gallery.html">Gallery</a>
-        </li><li><a href="Our work.html">Our Work</a>
-        </li><li><a href="Get involved.html">Get Involved</a>
-        </li><li><a href="enquiry.html"class="active">Enquiry</a>
-        </li><li><a href="Contact us.html">Contact</a></li>
-    </ul></nav>
+    <div id="name">
+      <h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1>
+      <h2>Pure • Clean • Reliable Ice</h2>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"><label for="menu-toggle"
+      class="menu-icon">☰</label>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="About us.html">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Our work.html">Our Work</a></li>
+        <li><a href="Get involved.html">Get Involved</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="Contact us.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <section>
-      <h2 class="section-title">Place an Enquiry</h2>
-      <p class="lead">Select product, enter quantity and unit price — total updates live.</p>
+  <main>
+    <section class="container">
+      <h2 class="section-title">Place an Enquiry / Get a Quote</h2>
+      <p class="lead">Complete the form below to get an immediate estimate. Our team will follow up to confirm
+        availability and delivery windows. The quick calculator updates totals live so you can adjust quantity and unit
+        price to suit your budget.</p>
 
       <form id="enquiry-form" class="contact-form" novalidate>
-        <label for="eq-product">Product</label>
-        <select id="eq-product" name="product" required>
-          <option value="cubes">Ice Cubes</option>
-          <option value="blocks">Ice Blocks</option>
+        <label for="product">Product</label>
+        <select id="product" name="product" required>
+          <option value="cubes">Ice Cubes — per bag</option>
+          <option value="blocks">Ice Blocks — per block</option>
         </select>
 
-        <div class="row" style="display:flex; gap:12px; align-items:center;">
-          <div style="flex:1">
-            <label for="eq-qty">Quantity</label>
-            <input id="eq-qty" name="quantity" type="number" min="1" value="1" required />
-          </div>
-          <div style="flex:1">
-            <label for="eq-unit-price">Unit price (R)</label>
-            <input id="eq-unit-price" name="unitprice" type="number" step="0.01" value="25.00" required />
-          </div>
-        </div>
+        <label for="eq-qty">Quantity (items)</label>
+        <input id="eq-qty" name="quantity" type="number" min="1" value="1" required>
+        <div class="field-error" id="enqQtyError"></div>
 
-        <label for="eq-message">Delivery notes / Message</label>
-        <textarea id="eq-message" name="message" rows="4"></textarea>
+        <label for="eq-unit-price">Unit Price (R)</label>
+        <input id="eq-unit-price" name="unitprice" type="number" step="0.01" min="0" value="30.00" required>
+        <div class="field-error" id="enqUnitError"></div>
 
-        <p id="eq-overall" class="lead" style="margin-top:8px;">Order: 1 item(s) • Unit price: R25.00 • Total: R25.00</p>
+        <p><strong>Total (R):</strong> <span id="eq-total">0.00</span></p>
+        <div id="eq-overall" style="margin-bottom:12px;color:#666;"></div>
 
-        <div style="display:flex; gap:12px; align-items:center;">
-          <button type="submit" class="hero-btn">Send Enquiry</button>
-          <div style="background:#fff;padding:10px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.04)"><strong>R <span id="eq-total">25.00</span></strong></div>
-        </div>
+        <label for="enq-name">Contact Name</label>
+        <input id="enq-name" name="name" required>
+        <div class="field-error" id="enqNameError"></div>
+
+        <label for="enq-email">Email</label>
+        <input id="enq-email" name="email" type="email" required>
+        <div class="field-error" id="enqEmailError"></div>
+
+        <label for="enq-phone">Phone</label>
+        <input id="enq-phone" name="phone" required>
+        <div class="field-error" id="enqPhoneError"></div>
+
+        <label for="enq-message">Message</label>
+        <textarea id="enq-message" name="message" required>I would like a quotation for...</textarea>
+        <div class="field-error" id="enqMessageError"></div>
+
+        <button type="submit" class="cta-btn">Send Enquiry</button>
       </form>
     </section>
   </main>
 
-  <footer class="footer"><p>&copy; <span id="year"></span> MURN ICE CUBES &amp; BLOCKS FACTORY</p></footer>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 MURN ICE CUBES AND BLOCKS | All Rights Reserved</p>
+    <p><a href="./Contact us.html">Contact</a> | <a href="./Gallery.html">Gallery</a> | <a
+        href="./About us.html">About</a></p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/YourNumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
   <script src="../js/script.js"></script>
 </body>
+
 </html>

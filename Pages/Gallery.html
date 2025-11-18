@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Gallery - MURN ICE CUBES &amp; BLOCKS FACTORY</title>
-  <meta name="description" content="Gallery of MURN ICE production, storage and community events. Browse images and filter by service." />
-  <meta name="keywords" content="gallery, MURN ICE, production, delivery, blocks, cubes" />
-  <link rel="stylesheet" href="../css/style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — MURN Ice Cubes &amp; Blocks</title>
+  <meta name="description" content="Gallery of MURN Ice production, storage and delivery photos." />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <header>
-    <div id="name"><h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1><h2>Gallery</h2></div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"/>
-    <label for="menu-toggle" class="menu-icon">☰</label>
-    <nav><ul class="nav-links">
-<li><a href="../index.html">Home</a></li>
-      <li><a href="Gallery.html" class="active">Gallery</a>
-      </li><li><a href="About us.html">About</a></li>
-      <li><a href="Our work.html">Our Work</a></li>
-      <li><a href="enquiry.html"> Enquiry</a></li>
-      <li><a href="./Contact us.html">Contact</a></li>
-    </ul></nav>
+    <div id="name">
+      <h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1>
+      <h2>Pure • Clean • Reliable Ice</h2>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"><label for="menu-toggle"
+      class="menu-icon">☰</label>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./About us.html">About</a></li>
+        <li><a href="./Gallery.html" class="active">Gallery</a></li>
+        <li><a href="./Our work.html">Our Work</a></li>
+        <li><a href="./Get involved.html">Get Involved</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+        <li><a href="./Contact us.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container gallery">
-    <h2 class="section-title">Photo Gallery</h2>
-    <p class="lead">Search by service: cubes, blocks, delivery, storage, community.</p>
-    <input id="gallerySearch" placeholder="Search gallery: cubes, blocks, delivery, community..." />
+  <main>
+    <section class="container gallery">
+      <h2 class="section-title">Photo Gallery</h2>
+      <p class="lead">Browse production, storage and community images. Click any image to open a full-size preview.</p>
 
-    <div class="gallery-grid">
-      <a class="gallery-card" href="../Assets/Factory Exterior.webp" data-lightbox="murn" data-title="Factory Exterior" data-tags="production">
-        <img src="../Assets/Factory Exterior.webp" alt="Factory exterior - MURN ICE">
-        <div class="content"><h3>Factory Exterior</h3><p>Production facility at Tshiombo with hygienic workflow.</p></div>
-      </a>
 
-      <a class="gallery-card" href="../Assets/Production Line.webp" data-lightbox="murn" data-title="Production Line" data-tags="production">
-        <img src="../Assets/Production Line.webp" alt="Production line equipment">
-        <div class="content"><h3>Production Line</h3><p>Our production line delivers consistent, clear ice cubes and blocks.</p></div>
-      </a>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-card card" data-tags="production factory ice">
+          <a href="../Assets/Production Line.webp" data-lightbox="gallery" data-title="Production Line"><img
+              src="../Assets/Production Line.webp" alt="Factory production line"></a>
+          <h3>Production Line</h3>
+          <p>Automated production designed for purity and throughput.</p>
+        </div>
 
-      <a class="gallery-card" href="../Assets/Crystal clear ice cubes.webp" data-lightbox="murn" data-title="Ice Cubes" data-tags="cubes">
-        <img src="../Assets/Crystal clear ice cubes.webp" alt="Crystal clear ice cubes">
-        <div class="content"><h3>Ice Cubes</h3><p>Perfect for restaurants, events and households.</p></div>
-      </a>
+        <div class="gallery-card card" data-tags="storage coldroom">
+          <a href="../Assets/Cold Storage.jpg" data-lightbox="gallery" data-title="Cold Storage"><img
+              src="../Assets/Cold Storage.jpg" alt="Cold storage room"></a>
+          <h3>Cold Storage</h3>
+          <p>Temperature-controlled rooms for safe storage before dispatch.</p>
+        </div>
 
-      <a class="gallery-card" href="../Assets/Stacked ice blocks.webp" data-lightbox="murn" data-title="Ice Blocks" data-tags="blocks">
-        <img src="../Assets/Stacked ice blocks.webp" alt="Stacked ice blocks">
-        <div class="content"><h3>Ice Blocks</h3><p>Durable blocks for storage and transport.</p></div>
-      </a>
+        <div class="gallery-card card" data-tags="logistics delivery truck">
+          <a href="../Assets/Transport delivery.jpg" data-lightbox="gallery" data-title="Delivery Fleet"><img
+              src="../Assets/Transport delivery.jpg" alt="Delivery truck"></a>
+          <h3>Delivery Fleet</h3>
+          <p>Modern fleet ensuring timely deliveries across Venda.</p>
+        </div>
 
-      <a class="gallery-card" href="../Assets/Transport delivery.jpg" data-lightbox="murn" data-title="Delivery Truck" data-tags="delivery, logistics">
-        <img src="../Assets/Transport delivery.jpg" alt="Delivery truck loading ice">
-        <div class="content"><h3>Delivery Fleet</h3><p>Timely delivery to events and businesses across Venda.</p></div>
-      </a>
+        <div class="gallery-card card" data-tags="community donations">
+          <a href="../Assets/Community Support.jpg" data-lightbox="gallery" data-title="Community Support"><img
+              src="../Assets/Community Support.jpg" alt="Community support"></a>
+          <h3>Community Support</h3>
+          <p>Programmes and drives that help local families and schools.</p>
+        </div>
 
-      <a class="gallery-card" href="../Assets/murn 3.jpg" data-lightbox="murn" data-title="Cold Storage" data-tags="storage">
-        <img src="../Assets/murn 3.jpg" alt="Cold storage room">
-        <div class="content"><h3>Cold Storage</h3><p>Secure storage keeps products in prime condition.</p></div>
-      </a>
+        <div class="gallery-card card" data-tags="cubes retail">
+          <a href="../Assets/Crystal clear ice cubes.webp" data-lightbox="gallery" data-title="Crystal Cubes"><img
+              src="../Assets/Crystal clear ice cubes.webp" alt="Ice cubes closeup"></a>
+          <h3>Crystal Cubes</h3>
+          <p>Clear, hygienic cubes for hospitality and retail.</p>
+        </div>
 
-      <a class="gallery-card" href="../Assets/Donation.JPG" data-lightbox="murn" data-title="Community Event" data-tags="community">
-        <img src="../Assets/Donation.JPG" alt="Community event with MURN staff">
-        <div class="content"><h3>Community Events</h3><p>We support local events, schools and charity drives.</p></div>
-      </a>
-    </div>
+        <div class="gallery-card card" data-tags="blocks industrial">
+          <a href="..//Assets/ice-6215207_1280.jpg" data-lightbox="gallery" data-title="Ice Blocks"><img
+              src="../Assets/ice-6215207_1280.jpg" alt="Ice blocks"></a>
+          <h3>Ice Blocks</h3>
+          <p>Dense blocks for bulk cooling and transport applications.</p>
+        </div>
+
+        <div class="gallery-card card" data-tags="packaging sanitary">
+          <a href="../Assets/murn 3.jpg" data-lightbox="gallery" data-title="Packaging"><img src="../Assets/murn 3.jpg"
+              alt="Packaging area"></a>
+          <h3>Packaging</h3>
+          <p>Hygienic packaging ensures product safety and shelf life.</p>
+        </div>
+        <div class="gallery-card card" data-tags="Price List">
+          <a href="../Assets/MURN PRICE LIST.jpg" data-lightbox="gallery" data-title="Price List"><img
+              src="../Assets/MURN PRICE LIST.jpg" alt="Price list"></a>
+          <h3>MURN Pricing</h3>
+          <p>Setting lower and affordable prices for our products.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer"><p>&copy; <span id="year"></span> MURN ICE CUBES &amp; BLOCKS FACTORY</p></footer>
 
-  <script></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 MURN ICE CUBES AND BLOCKS | All Rights Reserved</p>
+    <p><a href="./Contact us.html">Contact</a> | <a href="./Gallery.html">Gallery</a> | <a
+        href="./About us.html">About</a></p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/YourNumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

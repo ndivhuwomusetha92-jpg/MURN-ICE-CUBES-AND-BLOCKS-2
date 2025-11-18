@@ -1,130 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>About Us - MURN ICE CUBES &amp; BLOCKS FACTORY</title>
-  <meta name="description" content="About MURN ICE CUBES & BLOCKS FACTORY — our story, mission and the experienced team behind production and delivery." />
-  <meta name="keywords" content="about MURN ICE, team, employees, Tshiombo" />
-  <meta name="author" content="MURN ICE CUBES & BLOCKS FACTORY" />
-  <link rel="stylesheet" href="../css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — MURN Ice Cubes &amp; Blocks</title>
+  <meta name="description"
+    content="About MURN Ice — our mission, manufacturing standards, team and community programs." />
+  <meta name="keywords" content="about MURN Ice, ice factory, team, community" />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <header>
-    <div id="name"><h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1><h2>About Us</h2></div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"/>
-    <label for="menu-toggle" class="menu-icon">☰</label>
-    <nav><ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html" class="active">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="our-work.html">Our Work</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="enquiry.html">Enquiry</a></li>
-      <li><a href="contact-us.html">Contact</a></li>
-    </ul></nav>
+    <div id="name">
+      <h1>MURN ICE CUBES &amp; BLOCKS FACTORY</h1>
+      <h2>Pure • Clean • Reliable Ice</h2>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"><label for="menu-toggle"
+      class="menu-icon">☰</label>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./About us.html" class="active">About</a></li>
+        <li><a href="./Gallery.html">Gallery</a></li>
+        <li><a href="./Our work.html">Our Work</a></li>
+        <li><a href="./Get involved.html">Get Involved</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero" style="background:#000;color:#fff;padding:44px 18px;">
-    <div class="hero-content"><h1>About MURN ICE CUBES &amp; BLOCKS FACTORY</h1><p>Delivering quality ice while creating local opportunities in Tshiombo and across Venda.</p></div>
-  </section>
+  <main>
+    <section class="container">
+      <h2 class="section-title">Our Story &amp; Mission</h2>
+      <p class="lead">MURN Ice Cubes &amp; Blocks Factory was established to provide dependable, food-safe ice solutions
+        across Venda. Our mission focuses on delivering consistent, purified ice while investing in the region through
+        employment and training programs. We believe a local business can be a positive anchor for economic opportunity
+        while serving the practical refrigeration needs of the community, businesses, and events.</p>
 
-  <main class="container">
-    <section>
-      <h2 class="section-title">Our Story & Mission</h2>
-      <p class="lead">MURN ICE began as a community micro-business and has grown into a reliable supplier offering jobs and training opportunities. Our mission is to produce safe, high-quality ice while reinvesting in our community through donations, trainings and partnerships.</p>
-    </section>
+      <h3>Manufacturing Standards</h3>
+      <p>Production follows documented SOPs—water filtration, controlled freezing, hygienic handling and packaging.
+        Quality assurance inspections include clarity checks and routine microbiological testing. Packaging uses
+        food-safe film and tamper-proof seals for customer confidence.</p>
 
-    <section style="margin-top:20px;">
-      <h2 class="section-title">Meet Our Team</h2>
-      <p class="lead">Experienced staff who maintain production standards and support logistics and community outreach.</p>
+      <h3>Our Team</h3>
+      <p>Our staff are trained in hygiene, equipment operation and logistics. We combine veteran manufacturing managers
+        with locally recruited operators and drivers. The leadership group maintains transparent production logs and
+        implements continuous training plans for staff skill development.</p>
 
-      <div style="max-width:760px;margin:0 auto 12px;">
-        <input id="employeeSearch" placeholder="Search employees by name, role or qualification..." style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6e6e6;" />
-      </div>
-
-      <div class="employees-grid">
-        <!-- Employee 1 -->
-        <div class="employee" data-name="Ndivhuwo Musetha" data-role="Factory Manager" data-qual="BEng, Food Safety">
-          <img src="../Assets/IMG-20241010-WA0015.jpg" alt="Ndivhuwo Musetha - Factory Manager">
-          <div class="info">
-            <h3>Ndivhuwo Musetha</h3>
-            <p><strong>Role:</strong> Factory Manager</p>
-            <p><strong>Qualifications:</strong> B.Eng (Manufacturing), Certificate in Food Safety & Hygiene</p>
-            <p>Over 8 years of production management experience. Oversees daily production and quality assurance.</p>
+      <div class="grid" id="employee-grid">
+        <div style="max-width:640px;margin:18px auto;text-align:center;">
+          <input id="employeeSearch" type="search" placeholder="Search employees (name, role, qualification)"
+            style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;">
+          <div id="employeeNoResult" style="display:none;margin-top:10px;color:#b00020;">No employees match your search.
           </div>
-        </div>
+          <div class="employees-grid">
+            <!-- Employee 1 -->
+            <div class="employee" data-name="Ndivhuwo Mulaudzi" data-role="Factory Manager"
+              data-qual="BEng, Food Safety">
+              <img src="../Assets/IMG-20241010-WA0015.jpg" alt="Ndivhuwo Mulaudzi - Factory Manager">
+              <div class="info">
+                <h3>Ndivhuwo Mulaudzi</h3>
+                <p><strong>Role:</strong> Factory Manager</p>
+                <p><strong>Qualifications:</strong> B.Eng (Manufacturing), Certificate in Food Safety & Hygiene</p>
+                </p>
+              </div>
+            </div>
 
-        <!-- Employee 2 -->
-        <div class="employee" data-name="Thandi Raphala" data-role="Operations Supervisor" data-qual="Diploma Logistics">
-          <img src="../Assets/Faranani.jpg" alt="Thandi Raphala - Operations Supervisor">
-          <div class="info">
-            <h3>Thandi Raphala</h3>
-            <p><strong>Role:</strong> Operations Supervisor</p>
-            <p><strong>Qualifications:</strong> Diploma in Logistics & Supply Chain</p>
-            <p>Coordinates shifts, manages stock and ensures workplace safety and compliance.</p>
-          </div>
-        </div>
+            <!-- Employee 2 -->
+            <div class="employee" data-name="Thandi Raphala" data-role="Operations Supervisor"
+              data-qual="Diploma Logistics">
+              <img src="../Assets/Faranani.jpg" alt="Thandi Raphala - Operations Supervisor">
+              <div class="info">
+                <h3>Thandi Raphala</h3>
+                <p><strong>Role:</strong> Operations Supervisor</p>
+                <p><strong>Qualifications:</strong> Diploma in Logistics & Supply Chain</p>
+              </div>
+            </div>
 
-        <!-- Employee 3 -->
-        <div class="employee" data-name="Sipho Dlamini" data-role="Delivery Lead" data-qual="N3 Mechanical">
-          <img src="../Assets/Makhadzi.webp" alt="Sipho Dlamini - Delivery Lead">
-          <div class="info">
-            <h3>Sipho Dlamini</h3>
-            <p><strong>Role:</strong> Delivery Lead</p>
-            <p><strong>Qualifications:</strong> N3 Mechanical, Defensive Driving Certificate</p>
-            <p>Manages fleet scheduling, driver training and ensures on-time deliveries.</p>
-          </div>
-        </div>
+            <!-- Employee 3 -->
+            <div class="employee" data-name="Sipho Dlamini" data-role="Delivery Lead" data-qual="N3 Mechanical">
+              <img src="../Assets/Makhadzi.webp" alt="Sipho Dlamini - Delivery Lead">
+              <div class="info">
+                <h3>Sipho Dlamini</h3>
+                <p><strong>Role:</strong> Delivery Lead</p>
+                <p><strong>Qualifications:</strong> N3 Mechanical, Defensive Driving Certificate</p>
+              </div>
+            </div>
 
-        <!-- Employee 4 -->
-        <div class="employee" data-name="Lebogang Ndlovu" data-role="Quality Technician" data-qual="Cert Quality Control">
-          <img src="../Assets/elon mask.webp" alt="Lebogang Ndlovu - Quality Technician">
-          <div class="info">
-            <h3>Lebogang Ndlovu</h3>
-            <p><strong>Role:</strong> Quality Technician</p>
-            <p><strong>Qualifications:</strong> Certificate in Quality Control & HACCP basics</p>
-            <p>Conducts regular product testing and hygiene inspections to maintain standards.</p>
-          </div>
-        </div>
+            <!-- Employee 4 -->
+            <div class="employee" data-name="Lebogang Ndlovu" data-role="Quality Technician"
+              data-qual="Cert Quality Control">
+              <img src="../Assets/lebo.jpg" alt="Lebogang Ndlovu - Quality Technician">
+              <div class="info">
+                <h3>Lebogang Ndlovu</h3>
+                <p><strong>Role:</strong> Quality Technician</p>
+                <p><strong>Qualifications:</strong> Certificate in Quality Control & HACCP basics</p>
+              </div>
+            </div>
 
-        <!-- Employee 5 -->
-        <div class="employee" data-name="Rita Mohale" data-role="Community Liaison" data-qual="BA Social Work">
-          <img src="../Assets/OIP.webp" alt="Rita Mohale - Community Liaison">
-          <div class="info">
-            <h3>Rita Mohale</h3>
-            <p><strong>Role:</strong> Community Liaison</p>
-            <p><strong>Qualifications:</strong> BA (Social Work), Community Outreach Training</p>
-            <p>Leads community programs, donation drives and school partnership initiatives.</p>
-          </div>
-        </div>
+            <!-- Employee 5 -->
+            <div class="employee" data-name="Rita Mohale" data-role="Community Liaison" data-qual="BA Social Work">
+              <img src="../Assets/rita.jpg" alt="Rita Mohale - Community Liaison">
+              <div class="info">
+                <h3>Rita Mohale</h3>
+                <p><strong>Role:</strong> Community Liaison</p>
+                <p><strong>Qualifications:</strong> BA (Social Work), Community Outreach Training</p>
+              </div>
+            </div>
 
-        <!-- Employee 6 -->
-        <div class="employee" data-name="Patrick Khosa" data-role="Maintenance Engineer" data-qual="ND Mechatronics">
-          <img src="../Assets/Gusba.webp" alt="Patrick Khosa - Maintenance Engineer">
-          <div class="info">
-            <h3>Patrick Khosa</h3>
-            <p><strong>Role:</strong> Maintenance Engineer</p>
-            <p><strong>Qualifications:</strong> ND Mechatronics, Refrigeration Certification</p>
-            <p>Responsible for upkeep of equipment and rapid response to mechanical issues.</p>
+            <!-- Employee 6 -->
+            <div class="employee" data-name="Patrick Khosa" data-role="Maintenance Engineer"
+              data-qual="ND Mechatronics">
+              <img src="../Assets/patrick.jpg" alt="Patrick Khosa - Maintenance Engineer">
+              <div class="info">
+                <h3>Patrick Khosa</h3>
+                <p><strong>Role:</strong> Maintenance Engineer</p>
+                <p><strong>Qualifications:</strong> ND Mechatronics, Refrigeration Certification</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
     </section>
 
     <section style="margin-top:28px;">
       <h2 class="section-title">Our Commitments</h2>
       <div class="grid">
-        <div class="card"><h3>Quality & Hygiene</h3><p>Strict protocols for clean production and packaging to ensure safe ice for consumption.</p></div>
-        <div class="card"><h3>Local Employment</h3><p>We prioritise hiring and training local youth to build skills and provide stable jobs.</p></div>
-        <div class="card"><h3>Community Support</h3><p>We organise donation drives and partner with local schools and clinics.</p></div>
+        <div class="card">
+          <h3>Quality & Hygiene</h3>
+          <p>Strict protocols for clean production and packaging to ensure safe ice for consumption.</p>
+        </div>
+        <div class="card">
+          <h3>Local Employment</h3>
+          <p>We prioritise hiring and training local youth to build skills and provide stable jobs.</p>
+        </div>
+        <div class="card">
+          <h3>Community Support</h3>
+          <p>We organise donation drives and partner with local schools and clinics.</p>
+        </div>
       </div>
+    </section>
+
+
+
+
+
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Qualifications &amp; Safety</h2>
+      <p>All production staff are trained in food safety and hygiene. MURN maintains production logs, equipment
+        calibration records and adheres to recommended public health guidelines. Our commitment to safety extends to
+        staff PPE, workplace sanitization, and regular audits.</p>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; <span id="year"></span> MURN ICE CUBES &amp; BLOCKS FACTORY</p>
+    <p>&copy; 2025 MURN ICE CUBES AND BLOCKS | All Rights Reserved</p>
+    <p><a href="./Contact us.html">Contact</a> | <a href="./Gallery.html">Gallery</a> | <a
+        href="./About us.html">About</a></p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/YourNumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
